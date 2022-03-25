@@ -20,7 +20,7 @@ Timeframe: 8 days
 
 ## Deployment
 
-Repository link: https://github.com/PeterBid/rick-and-morty-website
+Repository link: https://github.com/PeterBid/Project-4
 
 ## Team
 
@@ -29,3 +29,51 @@ Repository link: https://github.com/PeterBid/rick-and-morty-website
 #### • [Thor Refoy](https://github.com/thor-r)
 
 #### • [Ali Ali](https://github.com/alibeniaminali)
+
+## Installation
+
+Install back-end dependencies: `pipenv`
+Enter Shell for project: `pipenv shell`
+Make Migrations: `python manage.py makemigrations`
+Migrate: `python manage.py migrate`
+Load Seed data for Genres: `python manage.py loaddata genres/seeds.json`
+Load Seed data for Games: `python manage.py loaddata games/seeds.json`
+Load Seed data for Users: `python manage.py loaddata jwt-auth/seeds.json`
+Load Seed data for Medias: `python manage.py loaddata medias/seeds.json`
+Load Seed data for Comments: `python manage.py loaddata comments/seeds.json`
+Start back-end server: `python manage.py runserver`
+Change into front-end directory: `cd client`
+Install front-end dependencies: `yarn`
+Start front-end server: `yarn start`
+
+## Technologies Used
+
+#### Frontend
+
+React.js
+Axios
+React Bootstrap
+CSS3
+SCSS
+
+#### Backend
+
+Python
+Django
+Django REST framework
+PyJWT
+PostgreSQL
+Psycopg2
+
+#### Development tools
+
+Visual Studio Code
+Insomnia
+Yarn
+Cloudinary
+Git & GitHub
+Google Chrome development tools
+Figma (wireframing frontend)
+FigJam (wireframing backend)
+Asana (planning and timeline)
+Canva (logo, images and gifs)
