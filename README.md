@@ -50,10 +50,10 @@ Start front-end server: `yarn start`
 
 #### Frontend
 
-* React.js
+* React
 * Axios
 * React Bootstrap
-* CSS3
+* CSS
 * SCSS
 
 #### Backend
