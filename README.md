@@ -50,30 +50,30 @@ Start front-end server: `yarn start`
 
 #### Frontend
 
-React.js
-Axios
-React Bootstrap
-CSS3
-SCSS
+* React.js
+* Axios
+* React Bootstrap
+* CSS3
+* SCSS
 
 #### Backend
 
-Python
-Django
-Django REST framework
-PyJWT
-PostgreSQL
-Psycopg2
+* Python
+* Django
+* Django REST framework
+* PyJWT
+* PostgreSQL
+* Psycopg2
 
 #### Development tools
 
-Visual Studio Code
-Insomnia
-Yarn
-Cloudinary
-Git & GitHub
-Google Chrome development tools
-Figma (wireframing frontend)
-FigJam (wireframing backend)
-Asana (planning and timeline)
-Canva (logo, images and gifs)
+* Visual Studio Code
+* Insomnia
+* Yarn
+* Cloudinary
+* Git & GitHub
+* Google Chrome development tools
+* Figma (wireframing frontend)
+* FigJam (wireframing backend)
+* Asana (planning and timeline)
+* Canva (logo, images and gifs)
