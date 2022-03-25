@@ -2,6 +2,8 @@
 
 ### General Assembly Project 4
 
+![Screenshot 2022-03-24 at 18 29 53](https://user-images.githubusercontent.com/91087641/160178949-e3c1156c-a150-49a1-b026-5ba882074490.png)
+
 ## Brief 
 
 Build a **full-stack** application by making your own **backend** and your own **frontend**.
