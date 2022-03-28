@@ -40,7 +40,7 @@ As fans of gaming generally, we were inspired by various aspects of Twitch, Stea
 
 This is a full-stack application built with Django REST Framework and React. It was also my first experience using Python and Django in the back-end.
 
-The whole application was built over 8 days in a group of three devs.
+The whole application was built over 8 days in a team of three devs.
 
 
 ## Installation
