@@ -32,6 +32,17 @@ Repository link: https://github.com/PeterBid/Project-4
 
 #### • [Ali Ali](https://github.com/alibeniaminali)
 
+## Concept
+
+Console Logs is a Social Media Platform in which users can watch, review and upload media and video clips related to console and computer gaming. 
+
+As fans of gaming generally, we were inspired by various aspects of Twitch, Steam and Youtube, wishing to combine these aspects together to build a visually striking and interactive gaming related video platform. 
+
+This is a full-stack application built with Django REST Framework and React. It was also my first experience using Python and Django in the back-end.
+
+The whole application was built over 8 days in a group of three devs.
+
+
 ## Installation
 
 * Install back-end dependencies: `pipenv`
@@ -79,3 +90,23 @@ Repository link: https://github.com/PeterBid/Project-4
 * FigJam (wireframing backend)
 * Asana (planning and timeline)
 * Canva (logo, images and gifs)
+
+## Process
+
+### Planning
+
+## Challenges and Wins
+
+#### Challenges
+
+#### Wins
+
+## Future Improvements
+
+## Key Learnings
+
+## Contact
+
+Social - www.linkedin.com/in/peter-bid
+
+Email - peterbid21@gmail.com
