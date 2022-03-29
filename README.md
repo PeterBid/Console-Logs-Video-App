@@ -114,9 +114,9 @@ The whole application was built over 8 days in a team of three devs.
 
 ### Planning
 
-After researcheing the basic layout of video sites such as Twitch and Youtube we made a wireframe for the front-end using `Figma`. 
+After researching the basic layout of video sites such as Twitch and Youtube we made a wireframe for the front-end using `Figma`. 
 
-For planning out how the backend would work, we decided that in order set genres for the games it would be easier to have a separate `Genre` model akin to searching by Tags. This way we could create a `many to many` relationship with games allowing users to filter games by genres on the frontend. 
+For planning out how the backend would work, we decided that in order to set genres for the games it would be easier to have a separate `Genre` model akin to searching by Tags. This way we could create a `many to many` relationship with games allowing users to filter games by genres on the frontend. 
 
 We then made an `ERD` with `FigJam` to visualise the relationships between the different models.
 
@@ -134,7 +134,7 @@ An `Asana` Board was also created to keep track of our short term and long term 
 
 #### Folder Structure 
 
-In the end, the folders of different apps on the back-end look like the below picture, and each folder has a similar structure to the comments folder.
+In the end, the folders of different apps on the back-end look like the picture below, and each folder has a similar structure to the comments folder.
 
 <img width="161" alt="Screen Shot 2022-03-29 at 08 31 05" src="https://user-images.githubusercontent.com/91087641/160558065-b79baabc-2b4a-4fe6-8d43-2a633aace9db.png">
 
@@ -142,7 +142,7 @@ Each folder has its purpose:
 
 * `games` – holds a many to many relationship with genres, with many medias attached to a single game.
 * `genres` – forms a many-to-many relationship with games. Aimed to create store categories like "action," "fps," "platform"...
-* `medias` – holds many relationships as each media is related to a game and owned by a user, however multiple users can comment on each media. While • the medias we used in the site was based around videoclips we set up the back-end to be applicable to images as well.
+* `medias` – holds many relationships as each media is related to a game and owned by a user, however multiple users can comment on each media. While the medias we used in the site was based around videoclips we set up the back-end to be applicable to images as well.
 * `comments` – forms a many-to-one relationship with medias. Intended for users' reviews and comments.
 * `jwt_auth` – intended for user model and authentication when registering or logging into the site.
 
@@ -158,7 +158,7 @@ We then created each model, set each field and added the relationships in as fie
 
 Afterwards we created serializers both common and populated by the other models they have a relationship with for each model.
 
-For example the Media serilazers looked like this.
+For example the Media serializers  looked like this.
 
 ```javascript
 from rest_framework import serializers # so we can extend django's model serializer
@@ -207,17 +207,17 @@ After creating each view we then used `Insomnia` and the admin to check all rela
 
 #### Creating Components
 
-We created a React app and connected to the database. We then created all the components that we were planning to use and connected them using the React Router DOM. We then created the elements that would made up each individual component.
+We created a React app and connected to the database. We then created all the components that we were planning to use and connected them using the React Router DOM. We then created the elements that would make up each individual component.
 
 #### Home
 
-In order to streamline the user experience, we decided to incorperate the list of games into the home page as well. For displaying the games, after using a `get` axios request to receive the data we used the `map` method alongside `flexbox` to display the characters in a grid. 
+In order to streamline the user experience, we decided to incorporate the list of games into the home page as well. For displaying the games, after using a `get` axios request to receive the data we used the `map` method alongside `flexbox` to display the characters in a grid. 
 
 <img width="877" alt="Screenshot 2022-03-25 at 12 02 21" src="https://user-images.githubusercontent.com/91087641/160580161-ff0db491-d481-433c-9b59-aacb1fe8e6aa.png">
 
 * Filtering
 
-As the games had multple fields we wished for users to search by, the name of the game and the genere tag attached to the game, we needed to create search bar that could filter by both fields. Eventually we settled upon using Regular Expression `RegExp` to overcome this problem.
+As the games had multiple fields we wished for users to search by, the name of the game and the genre tag attached to the game, we needed to create a search bar that could filter by both fields. Eventually we settled upon using Regular Expression `RegExp` to overcome this problem.
 
 A `useState` of `searchTerm` in conjunction with another `useState` of `setTagSearchTerm` was created alongside a text form targeting what users typed as a search term for game names and genres. This was then used to create a `RegExp` function to `filter` out results for the `map`.
 
@@ -231,7 +231,7 @@ A `useState` of `searchTerm` in conjunction with another `useState` of `setTagSe
 
 We had previously used Cloudinary to upload images in our previous projects, however this was the first time using Cloudinary with videos. 
 
-Fortunately the process was very simillar and after familiarising ourselves with using Cloudinary API to make post requests and store images there, we were able to quickly adjust it to video. 
+Fortunately the process was very similar and after familiarising ourselves with using Cloudinary API to make post requests and store images there, we were able to quickly adjust it to video. 
 
 ```javascript
 export const ImageUploadField = ({ handleImageUrl, setFormData, value }) => {
@@ -291,7 +291,7 @@ Upon successful registration, the customer is redirected to the login page. If t
 
 We used the `id` of each game on the home page , to create a `gameID` which then used with `useParams` created links to the `GameDetail` component. If a user clicks on an individual game, they are redirected to a page with detailed information about that game. This was then used to return specific information related to each game.
 
-In GameDetail this process was repeated to map through all the medias attached to each game. The previous step was then repeated again created individual `MediaDetail` pages when users clicked the title of video.
+In GameDetail this process was repeated to map through all the medias attached to each game. The previous step was then repeated again to create individual `MediaDetail` pages when users clicked the title of the video.
 
 <img width="1015" alt="Screenshot 2022-03-25 at 12 01 48" src="https://user-images.githubusercontent.com/91087641/160589229-d389c008-db71-4de5-af62-01cb8c90af8f.png">
 
@@ -303,7 +303,7 @@ In GameDetail this process was repeated to map through all the medias attached t
 
 #### Commenting on Media
 
-Comments about the media also appear on the individual media page. This was done by acessing the POST and Delete requests from the backend. If the user is not registered, they cannot comment on the media, nor can they delete a comment if they are not the owner of that comment.
+Comments about the media also appear on the individual media page. This was done by accessing the POST and Delete requests from the backend. If the user is not registered, they cannot comment on the media, nor can they delete a comment if they are not the owner of that comment.
 
 <img width="702" alt="Screenshot 2022-03-25 at 12 07 00" src="https://user-images.githubusercontent.com/91087641/160599227-a4340af0-1c1f-4225-b837-55625d35e0da.png">
 
@@ -315,9 +315,9 @@ Comments about the media also appear on the individual media page. This was done
 
 #### Styling
 
-We used a mixture of `Bootstrap` and `SCSS` for the styling. We wished to create an application which had a more "clean" look. A common theme with gaming sites such as Twitch is that they are very vibrant but also very cluttered. We wanted a clean look to differentiate ourselves and make platform would appeal to anyone even if they were not conventional gamers. 
+We used a mixture of `Bootstrap` and `SCSS` for the styling. We wished to create an application which had a more "clean" look. A common theme with gaming sites such as Twitch is that they are very vibrant but also very cluttered. We wanted a clean look to differentiate ourselves and make a platform that would appeal to anyone even if they were not conventional gamers. 
 
-We also wanted our website to feel "alive" and interactive with a unique look and consistant branding. In order to emphasize this, we added various images, gifs and videos across the site customly made using `Canva`. This was also done alongside various `hover` effects across the site. 
+We also wanted our website to feel "alive" and interactive with a unique look and consistent branding. In order to emphasise this, we added various images, gifs and videos across the site customly made using `Canva`. This was also done alongside various `hover` effects across the site. 
 
 #### Project Walkthrough
 
@@ -345,19 +345,20 @@ Making the video's responsive to different screen sizes especially mobile.
 
 #### Wins
 
-Relationships with Django. We created models in the backend with a large ammount of interconnected relationships. Getting it all to work when acessing the data realy opened up the scope of what we could acess with each Get request.
+Relationships with Django. We created models in the backend with a large amount of interconnected relationships. Getting it all to work when accessing the data really opened up the scope of what we could access with each Get request.
 
 Videos and Cloudinary. Having the ability to integrate Cloudinary API to my application in storing user uploaded video, alongside getting videos to work effective with lots of options in both the frontend and backend is very satisfying.
 
-Styling. We set out to make a gaming social media platform that looked distinct from the ones that exist and I feel like we achived that, espcially with the custom images, logo, gifs we made with Canva
+Styling. We set out to make a gaming social media platform that looked distinct from the ones that exist and I feel like we achieved that, especially with the custom images, logo, gifs we made with Canva
 
-TeamWork. We worked really hard and well together for this project. We all brought different aspects of Front and Back end development together, combining our knowledge, while also learning alot from each other. This helped speed up solving problems we encoutered as well as reasearching different ways to implement things. 
+TeamWork. We worked really hard and well together for this project. We all brought different aspects of Front and Back end development together, combining our knowledge, while also learning a lot from each other. This helped speed up solving problems we encountered as well as researching different ways to implement things.
+ 
 
 ## Future Improvements
 
 Having the 5 most viewed media on the home page working effectively. At the moment it pulls 5 random medias to display.
 
-Create a Profile page where a user can view the media they have uploaded indepedent of it being related to a game.
+Create a Profile page where a user can view the media they have uploaded independent of it being related to a game.
 
 Make the project, and the videos in particular, responsive to different screen sizes especially mobile.
 
@@ -367,13 +368,14 @@ Better error handling.
 
 PostgreSQL and relational databases. Working with relational databases for the first time while using Django and Python on the backend, has really improved my confidence building the backend of an application. 
 
-Python. Being able adapt the Javascript fundamentals I've previously knew towards learning Python, really helped cement my understanidng of the langauge. I'm looking forward to building more applications in Python in the future.
+Python. Being able to adapt the Javascript fundamentals I've previously known towards learning Python, really helped cement my understanding of the language. I'm looking forward to building more applications in Python in the future.
 
-Object oriented programming. I was exposed to it for the first time and looking forward learning more about in my future projects.
+Object oriented programming. I was exposed to it for the first time and looking forward to learning more about it in my future projects.
 
-Overall I was able to apply what I had learnt previously and much more doing this project. I'm proud of the work I have achieved and the end result we got. 
+Overall I was able to apply what I had learnt previously and much more doing this project. I'm proud of the work I have achieved and the end result we got.
 
-Being able to build Full Stack projects like Console Logs gives me a huge sense of achievement of how far I'm progressed with coding in a short space of time and makes me very excited for the projects i'll be able to in the future.
+Being able to build Full Stack projects like Console Logs gives me a huge sense of achievement of how far I've progressed with coding in a short space of time and makes me very excited for the projects I'll be able to do in the future.
+
 
 ## Contact
 
