@@ -349,7 +349,7 @@ Relationships with Django. We created models in the backend with a large amount 
 
 Videos and Cloudinary. Having the ability to integrate Cloudinary API to my application in storing user uploaded video, alongside getting videos to work effective with lots of options in both the frontend and backend is very satisfying.
 
-Styling. We set out to make a gaming social media platform that looked distinct from the ones that exist and I feel like we achieved that, especially with the custom images, logo, gifs we made with Canva
+Styling. We set out to make a gaming social media platform that looked distinct from the ones that exist and I feel like we achieved that, especially with the custom images, logo, gifs we made with Canva.
 
 TeamWork. We worked really hard and well together for this project. We all brought different aspects of Front and Back end development together, combining our knowledge, while also learning a lot from each other. This helped speed up solving problems we encountered as well as researching different ways to implement things.
  
