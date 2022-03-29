@@ -346,9 +346,15 @@ Better error handling.
 
 ## Key Learnings
 
-PostgreSQL and relational databases. Working with relational databases for the first time while using Django and Python on the backend, has definitely improved my confidence building the backend of my application. Being able adapt the Javascript fundamentals I've learned in previous modules and adapt my knowledge in learning Python.
+PostgreSQL and relational databases. Working with relational databases for the first time while using Django and Python on the backend, has really improved my confidence building the backend of an application. 
+
+Python. Being able adapt the Javascript fundamentals I've previously knew towards learning Python, really helped cement my understanidng of the langauge. I'm looking forward to building more applications in Python in the future.
 
 Object oriented programming. I was exposed to it for the first time and looking forward learning more about in my future projects.
+
+Overall I was able to apply what I had learnt previously and much more doing this project. I'm proud of the work I have achieved and the end result we got. 
+
+Being able to build Full Stack projects like Console Logs gives me a huge sense of achievement of how far I'm progressed with coding in a short space of time and makes me very excited for the projects i'll be able to in the future.
 
 ## Contact
 
