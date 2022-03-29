@@ -286,6 +286,10 @@ In GameDetail this process was repeated to map through all the medias attached t
 
 
 
+![Screenshot 2022-03-24 at 18 48 44](https://user-images.githubusercontent.com/91087641/160597639-bb02b4d8-f897-429f-bfd6-671ddae07511.png)
+
+![Screenshot 2022-03-24 at 18 48 53](https://user-images.githubusercontent.com/91087641/160597702-5958ca4a-fe10-487c-846b-abaa2f237cd8.png)
+
 ## Challenges and Wins
 
 #### Challenges
