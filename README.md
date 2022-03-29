@@ -284,21 +284,71 @@ In GameDetail this process was repeated to map through all the medias attached t
 
 #### Commenting on Media
 
+Comments about the media also appear on the individual media page. This was done by acessing the POST and Delete requests from the backend. If the user is not registered, they cannot comment on the media, nor can they delete a comment if they are not the owner of that comment.
 
+<img width="702" alt="Screenshot 2022-03-25 at 12 07 00" src="https://user-images.githubusercontent.com/91087641/160599227-a4340af0-1c1f-4225-b837-55625d35e0da.png">
+
+<img width="858" alt="Screenshot 2022-03-25 at 12 08 13" src="https://user-images.githubusercontent.com/91087641/160599049-d3b199cf-d8fd-4d19-a4ad-fb133cb75122.png">
 
 ![Screenshot 2022-03-24 at 18 48 44](https://user-images.githubusercontent.com/91087641/160597639-bb02b4d8-f897-429f-bfd6-671ddae07511.png)
 
 ![Screenshot 2022-03-24 at 18 48 53](https://user-images.githubusercontent.com/91087641/160597702-5958ca4a-fe10-487c-846b-abaa2f237cd8.png)
 
+#### Styling
+
+We used a mixture of `Bootstrap` and `SCSS` for the styling. We wished to create an application which had a more "clean" look. A common theme with gaming sites such as Twitch is that they are very vibrant but also very cluttered. We wanted a clean look to differentiate ourselves and make platform would appeal to anyone even if they were not conventional gamers. 
+
+We also wanted our website to feel "alive" and interactive with a unique look and consistant branding. In order to emphasize this, we added various images, gifs and videos across the site customly made using `Canva`. This was also done alongside various `hover` effects across the site. 
+
+#### Project Walkthrough
+
+<img width="1437" alt="Screen Shot 2022-03-29 at 12 38 05" src="https://user-images.githubusercontent.com/91087641/160603393-4f3be569-b3f1-4869-b124-9c9176d59e62.png">
+
+<img width="1427" alt="Screen Shot 2022-03-29 at 12 38 27" src="https://user-images.githubusercontent.com/91087641/160603417-61a0f176-7f4f-4693-b330-382a53298cca.png">
+
+<img width="1440" alt="Screen Shot 2022-03-29 at 12 38 47" src="https://user-images.githubusercontent.com/91087641/160603468-21d9959c-89a9-4b73-bff9-d617d5a812c9.png">
+
+<img width="1423" alt="Screen Shot 2022-03-29 at 12 39 15" src="https://user-images.githubusercontent.com/91087641/160603537-14934e85-01b2-4266-be31-d4d48864d6c0.png">
+
+<img width="1433" alt="Screen Shot 2022-03-29 at 12 39 36" src="https://user-images.githubusercontent.com/91087641/160603593-3c1ab952-0c9a-403a-90d6-e97ab9f1499d.png">
+
 ## Challenges and Wins
 
 #### Challenges
 
+As this was our first back end database built in Django python, there was a learning curve for us to get all the aspects of each app in Django working such as Models, serializers, views, urls etc. However doing this really helped us to cement the fundamentals and understand how Django works.
+
+Figuring out how to make the relationships required for our application was work challenging. This was because we wanted to make something relatively complex with many interconnected parts, this eventually paid off in the end, especially with the genres filter. 
+
+Changing models on the backend and then using commands `python manage.py makemigrations` and `python manage.py migrate`. It took a while to figure out how to effectively change models without causing issues. The simplest way we found to sort it was to dump data and reseed it again.
+
+Making the video's responsive to different screen sizes especially mobile.
+
 #### Wins
+
+Relationships with Django. We created models in the backend with a large ammount of interconnected relationships. Getting it all to work when acessing the data realy opened up the scope of what we could acess with each Get request.
+
+Videos and Cloudinary. Having the ability to integrate Cloudinary API to my application in storing user uploaded video, alongside getting videos to work effective with lots of options in both the frontend and backend is very satisfying.
+
+Styling. We set out to make a gaming social media platform that looked distinct from the ones that exist and I feel like we achived that, espcially with the custom images, logo, gifs we made with Canva
+
+TeamWork. We worked really hard and well together for this project. We all brought different aspects of Front and Back end development together, combining our knowledge, while also learning alot from each other. This helped speed up solving problems we encoutered as well as reasearching different ways to implement things. 
 
 ## Future Improvements
 
+Having the 5 most viewed media on the home page working effectively. At the moment it pulls 5 random medias to display.
+
+Create a Profile page where a user can view the media they have uploaded indepedent of it being related to a game.
+
+Make the project, and the videos in particular, responsive to different screen sizes especially mobile.
+
+Better error handling.
+
 ## Key Learnings
+
+PostgreSQL and relational databases. Working with relational databases for the first time while using Django and Python on the backend, has definitely improved my confidence building the backend of my application. Being able adapt the Javascript fundamentals I've learned in previous modules and adapt my knowledge in learning Python.
+
+Object oriented programming. I was exposed to it for the first time and looking forward learning more about in my future projects.
 
 ## Contact
 
