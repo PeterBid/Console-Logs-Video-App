@@ -95,6 +95,28 @@ The whole application was built over 8 days in a team of three devs.
 
 ### Planning
 
+After researcheing the basic layout of video sites such as Twitch and Youtube we made a wireframe for the front-end using `Figma`. 
+
+For planning out how the backend would work, we decided that in order set genres for the games it would be easier to have a separate `Genre` model akin to searching by Tags. This way we could create a `many to many` relationship with games allowing users to filter games by genres on the front-end. 
+
+We then made an `ERD` with `FigJam` to visualise the relationships between the different models.
+
+An `Asana` Board was also created to keep track of our short term and long term objectives for the project.
+
+#### Wire Frame
+
+<img width="693" alt="Screenshot 2022-03-02 at 21 43 50" src="https://user-images.githubusercontent.com/91087641/160553299-a4830a60-4538-4def-9a02-6daa0aa65246.png">
+
+#### ERD
+
+<img width="1012" alt="Screenshot 2022-03-02 at 21 37 51" src="https://user-images.githubusercontent.com/91087641/160553366-37c945ec-a135-470c-b4b3-3807d41de73c.png">
+
+### Creating the Back-end with Django
+
+
+
+
+
 ## Challenges and Wins
 
 #### Challenges
