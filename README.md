@@ -256,6 +256,36 @@ We then added a MediaUploadForm for users to upload the Media. They also have a 
 
 ![Screenshot 2022-03-24 at 18 43 39](https://user-images.githubusercontent.com/91087641/160584153-5c7fe402-4613-43e8-925b-be3419d754f8.png)
 
+#### Register & Login
+
+For registering we created a form where the user must choose a unique username, email, password, and confirm password before proceeding with the registration. If there is no user in the database with the existing username or email, the user is successfully registered.
+
+Upon successful registration, the user is redirected to the login page. If the data entered is the same as the data stored in the database, the user is then redirected to the home page.
+
+![Screenshot 2022-03-24 at 18 42 52](https://user-images.githubusercontent.com/91087641/160592909-0fd47c0b-1d27-4e41-847b-790b6d555c64.png)
+
+![Screenshot 2022-03-24 at 18 41 39](https://user-images.githubusercontent.com/91087641/160593054-5a0564a7-d1d2-4d45-bcfc-b7cee41faf8d.png)
+
+Upon successful registration, the customer is redirected to the login page. If the data entered is the same as the data stored in the database, the user is then redirected to the home page.
+
+#### GameDetail and MediaDetail
+
+We used the `id` of each game on the home page , to create a `gameID` which then used with `useParams` created links to the `GameDetail` component. If a user clicks on an individual game, they are redirected to a page with detailed information about that game. This was then used to return specific information related to each game.
+
+In GameDetail this process was repeated to map through all the medias attached to each game. The previous step was then repeated again created individual `MediaDetail` pages when users clicked the title of video.
+
+<img width="1015" alt="Screenshot 2022-03-25 at 12 01 48" src="https://user-images.githubusercontent.com/91087641/160589229-d389c008-db71-4de5-af62-01cb8c90af8f.png">
+
+![Screenshot 2022-03-24 at 18 38 41](https://user-images.githubusercontent.com/91087641/160589893-952731b8-58f5-478b-b1af-2da5b3c03cc2.png)
+
+<img width="923" alt="Screenshot 2022-03-25 at 12 06 37" src="https://user-images.githubusercontent.com/91087641/160589518-dda14550-7d1d-4639-9cea-6b0b8c621b94.png">
+
+![Screenshot 2022-03-24 at 18 51 24](https://user-images.githubusercontent.com/91087641/160590102-802168df-b8d2-49f2-9464-c6524082a4a0.png)
+
+#### Commenting on Media
+
+
+
 ## Challenges and Wins
 
 #### Challenges
