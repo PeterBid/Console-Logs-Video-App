@@ -4,6 +4,23 @@
 
 ![Screenshot 2022-03-24 at 18 29 53](https://user-images.githubusercontent.com/91087641/160178949-e3c1156c-a150-49a1-b026-5ba882074490.png)
 
+- [Brief](#brief)
+- [Deployment](#deployment)
+- [Team](#team)
+- [Concept](#concept-and-api-used)
+- [Installation](#installation)
+- [Technologies Used](#technologies-used)
+- [Process](#process)
+- [Planning](#planning)
+- [Creating the Backend with Django](#creating-the-backend-with-django)
+- [Creating the Frontend with React](#creating-the-frontend-with-react)
+- [Project Walkthough](#project-walkthough)
+- [Challenges and Wins](#challenges-and-wins)
+- [Future Improvements](#future-improvements)
+- [Key Learnings](#key-learnings)
+- [Contact](#contact)
+
+
 ## Brief 
 
 Build a **full-stack** application by making your own **backend** and your own **frontend**.
