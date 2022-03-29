@@ -214,7 +214,43 @@ We had previously used Cloudinary to upload images in our previous projects, how
 
 Fortunately the process was very simillar and after familiarising ourselves with using Cloudinary API to make post requests and store images there, we were able to quickly adjust it to video. 
 
+```javascript
+export const ImageUploadField = ({ handleImageUrl, setFormData, value }) => {
+
+  const handleUpload = async event => {
+    const data = new FormData()
+    data.append('file', event.target.files[0])
+    data.append('upload_preset', 'du2ggxil')
+    const res = await axios.post('https://api.cloudinary.com/v1_1/sei61cloud/video/upload', data)
+    ageUrl(res.data.url)
+  }
+```
+
+```javascript
 Using the `video` tag with React in the Return we were also able to easily add other aspects for the users to interact with the video's automatically, such as play/pause, screen size, open in second window, playback speed etc. 
+
+  return (
+    <>
+    {value ?
+      <div>
+        <video src={value} alt='uploaded' width="350" height="250" controls></video> 
+      </div>
+      :
+      <>
+        <label>Upload Your Log</label>
+        <br></br>
+        <input
+          className="input"
+          type="file"
+          onChange={handleUpload}
+        />
+      </>
+    }
+  </>
+  )
+}
+```
+
 
 We then added a MediaUploadForm for users to upload the Media. They also have a `Boolean` field to select whether they are uploading an image or video.
 
