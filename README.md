@@ -319,7 +319,7 @@ We used a mixture of `Bootstrap` and `SCSS` for the styling. We wished to create
 
 We also wanted our website to feel "alive" and interactive with a unique look and consistant branding. In order to emphasize this, we added various images, gifs and videos across the site customly made using `Canva`. This was also done alongside various `hover` effects across the site. 
 
-#### Project Walkthrough
+## Project Walkthrough
 
 <img width="1437" alt="Screen Shot 2022-03-29 at 12 38 05" src="https://user-images.githubusercontent.com/91087641/160603393-4f3be569-b3f1-4869-b124-9c9176d59e62.png">
 
