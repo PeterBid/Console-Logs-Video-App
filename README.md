@@ -70,7 +70,7 @@ The whole application was built over 8 days in a team of three devs.
 * Migrate: `python manage.py migrate`
 * Load Seed data for Genres: `python manage.py loaddata genres/seeds.json`
 * Load Seed data for Games: `python manage.py loaddata games/seeds.json`
-* Load Seed data for Users: `python manage.py loaddata jwt-auth/seeds.json`
+* Load Seed data for Users: `python manage.py loaddata jwt_auth/seeds.json`
 * Load Seed data for Medias: `python manage.py loaddata medias/seeds.json`
 * Load Seed data for Comments: `python manage.py loaddata comments/seeds.json`
 * Start back-end server: `python manage.py runserver`
