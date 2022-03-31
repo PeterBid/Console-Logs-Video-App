@@ -16,7 +16,7 @@
 - [Planning](#planning)
 - [Creating the Backend with Django](#creating-the-backend-with-django)
 - [Creating the Frontend with React](#creating-the-frontend-with-react)
-- [Project Walkthough](#project-walkthrough)
+- [Project Walkthrough](#project-walkthrough)
 - [Challenges and Wins](#challenges-and-wins)
 - [Future Improvements](#future-improvements)
 - [Key Learnings](#key-learnings)
